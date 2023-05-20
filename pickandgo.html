@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Holmes</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" class="home-link">
+                <div class="hdg-divider">
+                    <h1>Stephanie</h1>
+                    <h1 class="surname">Holmes</h1>
+                </div>
+            </a>
+            <div class="divider">
+                <h2>Full-Stack Web Developer</h2>
+            </div>
+        </header>
+        <main>
+            <div class="main-body">
+                <h3>PickAndGo</h3>
+                <p class="sub-title">A fully responsive web application for restaurants that allow customisation of products on their menu.<br>
+                Built with C# ASP .Net Identity Framework, using a Microsoft SQL Server database, and implementing Paypal for payments and SendGrid for confirmation emails.</p>
+                <div class="slide-show">
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 204834.png" alt="">
+                        <div class="text-block">
+                            <p>Landing page, encouraging the user to start an order.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 204920.png" alt="">
+                        <div class="text-block">
+                            <p>The user may already have an account, might want to sign up for an account, or might just want to continue as a guest.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 212629.png" alt="">
+                        <div class="text-block">
+                            <p>Log in page, handled by ASP .Net Identity Framework, with email confirmation, password reset and forgot password functionality.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205657.png" alt="">
+                        <div class="text-block">
+                            <p>Initial page for a user with an account. Invites them to start a new order or take a look through their favourites to find something they have tried before.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205202.png" alt="">
+                        <div class="text-block">
+                            <p>Sandwich selection page: three sandwich sizes to choose from.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205320.png" alt="">
+                        <div class="text-block">
+                            <p>Customize page: all ingredients available are shown by category. A selection from the breads category is required, everything else is optional. Each sandwich has a base price associated with its size.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205434.png" alt="">
+                        <div class="text-block">
+                            <p>The user can customize all ingredients, by selecting either the regular quantity for that size sandwich, or extra. The price is adjusted accordingly using the base price for each ingredient.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205520.png" alt="">
+                        <div class="text-block">
+                            <p>Shopping cart: each item in the cart can be edited, which returns to the customize page for changes, added to the order again if a second sandwich the same is required, or deleted from the cart.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205913.png" alt="">
+                        <div class="text-block">
+                            <p>A user with an account can view his previous purchases. Sandwiches flagged as favourites are shown and new ones can be added.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 210045.png" alt="">
+                        <div class="text-block">
+                            <p>When adding a sandwich to favourites, a name must be given to it, making it easier to find in the future.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 205941.png" alt="">
+                        <div class="text-block">
+                            <p>A user with an account can view his favourites page. Sandwiches can be removed from this list by tapping the red heart. The name of each favourite can be edited.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 210012.png" alt="">
+                        <div class="text-block">
+                            <p>Changing the name of a favourite.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot 2023-05-14 210140.png" alt="">
+                        <div class="text-block">
+                            <p>About page, with a catchy phrase, image and logo. Scrolling down reveals a description of the restaurant and its services, and a map showing its location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 - Stephanie Holmes</p>
+        </footer>
+    </div><!-- end wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slide-show').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                responsive: [
+                    {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                    },
+                    {
+                    breakpoint: 1245,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

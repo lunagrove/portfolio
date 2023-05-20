@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Holmes</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" class="home-link">
+                <div class="hdg-divider">
+                    <h1>Stephanie</h1>
+                    <h1 class="surname">Holmes</h1>
+                </div>
+            </a>
+            <div class="divider">
+                <h2>Full-Stack Web Developer</h2>
+            </div>
+        </header>
+        <main>
+            <div class="main-body">
+                <h3>Tee Time</h3>
+                <p class="sub-title">A mobile application for Android and iOS that allows event creation, management and reporting for hosts, and event registration for users.<br>
+                Built with React Native, using AWS API Gateway, lambda functions, Amplify, Cognito, and a CockroachDB relational database.
+                </p>
+
+                <div class="slide-show">
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_133831_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>User authentication handled by Amplify and Cognito, featuring email confirmation, password reset and forgot password functionality. All api endpoints authorised with tokens.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_133854_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>User upcoming events page. Icons indicate status of event in relation to this user - registered, waitlisted, eligible, ineligible. Event capacity and number of spots taken is shown.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_133906_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Event details page for a registered event. User is able to view the generated QR code, or withdraw from the event.</p>
+                        </div>
+                    </div>    
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_133912_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>QR code is encoded with the user id and the event id. Could be scanned at the tournament and used to update the attendance status in the application. Currently still a manual process for hosts.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_133926_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Event details page for a waitlisted event. Shows the user's position in the waitlist queue. User is able to remove themselves from the waitlist if required.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134001_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Calendar view of a user's upcoming events, using the same color coding for events: green for registered, orange for waitlisted, red for ineligible. Event details page can be accessed by tapping an event.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134021_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Main menu for host functionality: details about any event starting today, ability to create an event, ability to list events, ability to list users who have signed up for the app.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134158_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Event creation page: events are assigned an eligibility type of guest list (host selects users who can register), bronze, silver or gold tier (has to match or be exceeded by the user's membership tier), or loyalty (user must have attended x number of previous events). </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134251_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Past events page. These events are completed and show the number of users who registered. Tapping on a past event will allow viewing of the event details page.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134258_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Event details page for a completed event shows attendance figures captured so far, and allows the attendance page to be viewed.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134304_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Attendance page shows all users who registered for this event and allows the host to flag them as having attended or recording them as a no show.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134352_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>Users list page showing all users currently signed up for the app. Icons indicate which membership tier each user has: gold, silver or bronze. Tapping on a user brings up the user details page.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134421_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>User details page allows the membership status of a user to be changed. Their event attendance history can also be viewed.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images\Screenshot_20230514_134429_Expo Go.jpg" alt="">
+                        <div class="text-block">
+                            <p>User event attendance page shows past events this user registered for, with filters by attended or no show.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 - Stephanie Holmes</p>
+        </footer>
+    </div><!-- end wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slide-show').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                responsive: [
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                    },
+                    {
+                    breakpoint: 1245,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
